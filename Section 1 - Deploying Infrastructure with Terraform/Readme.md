@@ -22,4 +22,4 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDc]: <./github.md>
    [PlDd]: <./destroy.md>   
    [PlDe]: <./provider-versioning.md>
-   [PlDf]: <./state_files.md>
+   [PlDf]: <./state_file.md>
