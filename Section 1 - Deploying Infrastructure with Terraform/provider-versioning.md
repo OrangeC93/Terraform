@@ -23,4 +23,4 @@ resource "aws_instance" "myec2" {
 }
 ```
 
-Note: .lock.hcl can block the changes of version. Need to delete it. 
+Note: .lock.hcl allows us to lock to a specific version of provider. If a particular provider already has a selection recorded in the lock files, Terraform will always re-select that version for installation, even if a newer version has become available. You can overide that behavior by adding the -upgrade option when you run terraform init.
