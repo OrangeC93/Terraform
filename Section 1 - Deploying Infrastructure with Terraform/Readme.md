@@ -13,6 +13,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 | 4 | [Destroying Infrastructure with Terraform (NEW)][PlDd] |
 | 5 | [Terraform Provider Versioning][PlDe] |
 | 6 | [Terraform State Files][PlDf] |
+| 7 | [Current Desired State][PlDg] |
 
 
 
@@ -23,3 +24,4 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDd]: <./destroy.md>   
    [PlDe]: <./provider-versioning.md>
    [PlDf]: <./state_file.md>
+   [PlDg]: <./desired_current_state.md>
