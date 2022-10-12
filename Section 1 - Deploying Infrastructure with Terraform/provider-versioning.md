@@ -22,3 +22,5 @@ resource "aws_instance" "myec2" {
    instance_type = "t2.micro"
 }
 ```
+
+Note: .lock.hcl can block the changes of version. Need to delete it. 
