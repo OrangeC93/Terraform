@@ -1,4 +1,4 @@
-Desired State: Terraform's primary function is to create, modify, and destroy in frastructure resources to match the desired state described in a Terraform configuration.
+Desired State: Terraform's primary function is to create, modify, and destroy in frastructure resources to **match the desired state described in a Terraform configuration**.
 
 Current State: current state is the actual state of a resource that is currently deployed.
 
@@ -6,7 +6,6 @@ Important Pointer: Terraform tries to ensure that the deployed infrastructure is
 
 
 Challenges with the current state on computed values: 
-
 
 ```sh
 terraform refresh ## the desired state will be changed to current state
