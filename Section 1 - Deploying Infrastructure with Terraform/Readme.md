@@ -25,3 +25,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDe]: <./provider-versioning.md>
    [PlDf]: <./state_file.md>
    [PlDg]: <./desired_current_state.md>
+
+# Resources
+
+https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit?usp=sharing
