@@ -10,3 +10,5 @@ Challenges with the current state on computed values:
 ```sh
 terraform refresh ## the desired state will be changed to current state
 ```
+
+Note: do not just specify minimal things whenever make the configuration, specify all the important things that are necessary, including IAM Role, the security groups and various other areas as part of your terraform configuration.
