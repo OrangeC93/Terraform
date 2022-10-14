@@ -1,5 +1,9 @@
 ## Overview of Type Constrains
 The type argument in a variable block allows you to restrict the type of the value that will be accepted as the value for a variable. If no type constraint is set then a value of any type is accepted.
+- string
+- list
+- map
+- number
 
 ## This snippet is from the Data Types for Variable video.
 
