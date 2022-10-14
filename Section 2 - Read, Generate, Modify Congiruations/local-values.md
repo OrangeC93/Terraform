@@ -1,3 +1,6 @@
+## Overview of Local Values
+A local value assigns a name to an expression, allowing it to be used multiple times within a modlue without repeating it. 
+
 ## This snippet is from the Local Values video.
 
 ### local-values.tf
