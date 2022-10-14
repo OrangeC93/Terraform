@@ -1,6 +1,14 @@
 ## Overview of Local Values
 A local value assigns a name to an expression, allowing it to be used multiple times within a modlue without repeating it. 
 
+## Local Values Support for Expression
+Local Values can be used for multiple different use-cases like having a conditional expression
+```sh
+locals {
+  name_prefix = "${var.name ! = "" ? var.name : var.default}"
+}
+```
+
 ## This snippet is from the Local Values video.
 
 ### local-values.tf
