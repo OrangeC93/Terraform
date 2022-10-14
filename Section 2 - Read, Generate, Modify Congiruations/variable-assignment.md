@@ -6,6 +6,11 @@ Variables in Terraform can be assigned values in multiple ways
 - From a File
 - Variable Defaults
 
+Declaration vs Assignment
+- A variables.tf file is used to define the variables type and optionally set a default value.
+- A terraform.tfvars file is used to set the actual values of the variables.
+- You could set default values for all your variables and not use tfvars files at all.
+
 ### Default File used in Demo
 
 ```sh
