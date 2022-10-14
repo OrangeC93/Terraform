@@ -6,7 +6,7 @@ provider "aws" {
 
 resource "aws_instance" "myec2" {
    ami = "ami-082b5a644766e0e6f"
-   instance_type = var.list[1]
+   instance_type = var.list[1] # var.types["us-west-2"]
 }
 
 variable "list" {
