@@ -1,3 +1,10 @@
+### Multiple Approaches to Variable Assignment
+
+Variables in Terraform can be assigned values in multiple ways
+- Environment variables
+- Command Line Flag
+- From a File
+- Variable Defaults
 
 ### Default File used in Demo
 
