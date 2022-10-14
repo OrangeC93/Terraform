@@ -45,6 +45,8 @@ Make sure to use the correct VPC ID of the AWS region in which you are creating 
 
 If you still get any error, feel free to raise your query in our Discord community. 
 
+Associate eip with ec2 instance:
+
 ### Code:
 
 ```sh
