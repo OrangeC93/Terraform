@@ -1,3 +1,6 @@
+## Overview of Spalat Expression
+Splat Expression allows us to get a list of all the attributes. 
+
 ## This snippet is from the Splat Expression Video.
 
 ### splat.tf
