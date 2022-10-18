@@ -1,3 +1,5 @@
+## Overview of Graph
+The terraform graph command is used to generate a visual representation of either a configuration or execution plan. The output of terraform graph is in the DOT format, which can easilty be converted to an imaged. 
 ## This snippet is from the Terraform Graph Video.
 
 ### GraphiViz Documentation Referred in Course:
@@ -38,7 +40,7 @@ resource "aws_security_group" "allow_tls" {
 
 
 
-### Commands Used:
+### Commands Used: Convert .dot to .svg
 ```sh
 terraform graph > graph.dot
 yum install graphviz
