@@ -23,3 +23,11 @@ output "arns" {
 }
 ```
 
+```sh
+output:
+arns = [
+"arn:aws:iam:7889567893344:user/system/iamuser.0",
+"arn:aws:iam:7889567893344:user/system/iamuser.1",
+"arn:aws:iam:7889567893344:user/system/iamuser.2"
+]
+```
