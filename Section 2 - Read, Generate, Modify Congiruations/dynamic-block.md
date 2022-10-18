@@ -1,3 +1,12 @@
+## Understanding the Challenge
+In many of the use-cases, there're repeatable nested blocks taht needs to be defined. This can lead to a long code and it can be difficult to manage in a longer time
+## Dynamic Block 
+Allows us to dynamically construct repeatable nested blocks which is supported inside resource, data, provider, and provisioner blocks
+## Iterator
+The iterator argument(optional) sets the name of a temporary variable that represents the current element of the complex value. If omitted, the name of the variable defaults to the lable of the dynamic blcok("ingress" in the example above)
+
+
+
 ### before.tf
 
 ```sh
@@ -45,9 +54,6 @@ resource "aws_security_group" "demo_sg" {
 ### dynamic-block.tf
 
 ```sh
-
-
-
 variable "sg_ports" {
   type        = list(number)
   description = "list of ingress ports"
@@ -80,4 +86,17 @@ resource "aws_security_group" "dynamicsg" {
   }
 }
 
+```
+
+
+### dynamic-block.tf without Iterator
+```sh
+  dynamic "ingress" {
+    for_each = var.sg_ports
+    content {
+      from_port   = ingress.value
+      to_port     = ingress.value
+      protocol    = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
+    }
 ```
