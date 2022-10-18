@@ -1,3 +1,5 @@
+##  Overview of Terraform Validate
+Terraform Validate primarily checks whether a configuration is syntactically valid. It can check various aspects including un supported arguments, underclared variables and others.
 ```sh
 provider "aws" {
   region     = "us-west-2"
