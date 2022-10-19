@@ -1,3 +1,15 @@
+## Challenges with Larger Infrastructure
+When you have a larger infrastructure, you will face issue related to API limits for a provider. For examples: 5 EC2, 3 RDS, 100 SG Rules, VPC Infra (infra.tf)
+
+## Dealing With Larger Infrastructure
+Switch to smaller configuration were each can be applied independently. For example: infra.tf -> ec2.tf, rds.tf, sg.tf, vpc.tf
+
+## -refresh=false
+Prevent terraform from querying the current state during operations like terraform plan. 
+
+## specify target
+-target-resource flag can be used to target a specific resource. Gnerally used as a means to operate on isolated portions of very large configurations
+
 ### Base Demo Configuration:
 ```sh
 provider "aws" {
