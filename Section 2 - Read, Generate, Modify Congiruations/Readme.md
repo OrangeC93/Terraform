@@ -60,3 +60,7 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDx]: <./tf-comments.tf>
 [PlDy]: <./challenge-count.md>
 [PlDz]: <./for_each.md>
+
+
+# Resources
+https://docs.google.com/document/d/1zAtDbdmvU8qRTVhxrNq_izjlJz2UBd3VnTQvXFzgKyI/edit?usp=sharing
