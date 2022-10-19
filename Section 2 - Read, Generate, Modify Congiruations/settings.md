@@ -1,3 +1,7 @@
+## Overview of Terraform Settings
+The special terraform configuration blcok type is used to configure some behaviors of Terraform itself, such as requiring a minimium Terraform version to apply your configuration. 
+- Terraform Version: requird_version
+- Prover Version: required_providers
 
 ## Demo Code and Examples Used During Demo:
 ```sh
