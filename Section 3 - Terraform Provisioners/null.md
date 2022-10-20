@@ -1,3 +1,9 @@
+## Basics of Null Resource
+The null_resources implements the standard resource lifecycle but takes no further action.
+- EC2 fetch contents from FTP Server
+- EC2 upload contents to S3
+- EC2 only if both dependency working
+
 ### null-example-1.tf:
 ```sh
 provider "aws" {
@@ -12,7 +18,7 @@ resource "aws_eip" "lb" {
 }
 
 
-resource "null_resource" "health_check" {
+resource "null_resource" "health_check" { # if the local exec provisioner success, eip cn be created
 
  provisioner "local-exec" {
 
