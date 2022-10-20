@@ -1,5 +1,9 @@
+## Provisioner - Failure behavior
+By default, provisioner that fail will also cause the Terraform apply itself to fail.
+The on_failure setting can be used to change this, The allowed values are:
+- continue: Ignore the error and continue with creation or destruction
+- fail: raise an error and stop applying (the default behavior). If this is a creation provisioner, taint the resource. 
 ### Important Note:
-
 Make sure to have the ec2-key.pem file present in the working directory for the provisioner to be able to connect to the instance.
 
 ### Demo Code Used During Demo:
