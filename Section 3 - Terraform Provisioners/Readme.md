@@ -18,3 +18,6 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
 [PlDc]: <./provisioner-types.md>
 [PlDd]: <./failure-behavior.md>
 [PlDe]: <./null.md>
+
+# Resource
+https://docs.google.com/document/d/156GDBzJo-SChuGxoeDTIpFFEbXVT8aPzDFaZdMPJ-qk/edit?usp=sharing
