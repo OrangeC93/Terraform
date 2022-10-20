@@ -1,3 +1,8 @@
+## Overview of Provisioner Types
+There're two preimary types of provisioners:
+- Creation-Time Provisioner: creation-time provisioners are only run during creation, not during updating or any other lifecycle. If a creation-teim provisioner fails, the resources is marked as tainted.
+- Destroy-Time Provisioner: Destroy provitioners are run before the resource is desgroyed.
+  - If when = destroy(terraform destroy) is specified, the provisioner will run when the resource it is defined within is destroyed
 ### Important Note:
 
 Make sure to have the ec2-key.pem file present in the working directory for the provisioner to be able to connect to the instance.
