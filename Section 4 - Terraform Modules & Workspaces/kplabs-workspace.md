@@ -1,3 +1,6 @@
+## Understanding WorkSpaces
+Terraform allows us to have multiple workspaces, with each of the workspace we can have different set of environment variables associated. Like instance types are diffrent in staging and production. 
+
 ### Terraform Workspace commands:
 ```sh
 terraform workspace -h
@@ -36,7 +39,7 @@ resource "aws_instance" "myec2" {
 }
 
 variable "instance_type" {
-  type = "map"
+  type = "map" 
 
   default = {
     default = "t2.nano"
