@@ -16,3 +16,6 @@ Terraform supports multiple backends that allows remote service related operatio
 - Kubernetes
 - HTTP
 - ETCD
+
+## Important Note
+Accessing state in a remote service generally requires some kind of access credentials. Smoe backends act like plain "remote disks" for state files; others support locking the state while operation are being performed, which helps preven conflicts and inconsistencies.
