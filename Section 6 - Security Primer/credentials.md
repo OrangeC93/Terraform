@@ -5,7 +5,7 @@ resource "aws_eip" "myeip" {
 }
 ```
 ### providers.tf
-
+No need provide access key and secret key
 ```sh
 provider "aws" {
   region     =  "us-west-1"
