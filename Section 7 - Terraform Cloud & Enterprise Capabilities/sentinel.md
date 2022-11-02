@@ -1,3 +1,10 @@
+## Overview of the Sentinel
+Sentinel is a policy-as-code freamework integrated with the HashiCorp Enterprise products. It enables fine-grained, logic-based policy decisions and can be extended to use information from external sources. 
+
+Note: Sentinel policies are paid features
+
+terraform plan -> sentinel checks -> terraform apply
+
 ## Documentation Referred:
 
 https://www.terraform.io/cloud-docs/sentinel/examples
