@@ -5,6 +5,9 @@ Note: Sentinel policies are paid features
 
 terraform plan -> sentinel checks -> terraform apply
 
+## High Level Structure
+Policy -> Policy Sets -> Workspace
+
 ## Documentation Referred:
 
 https://www.terraform.io/cloud-docs/sentinel/examples
