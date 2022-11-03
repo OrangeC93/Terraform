@@ -50,5 +50,46 @@ A module that includes a module black like this is the calling module of the chi
 The resources defined in a module are encapulated, so the calling module cannot access their attributes directly. However, the child module can declare output values to selectively export certain values to be accessed by the calling module.
 
 
+## Suppressing Value in CLI Output
+An output can be marked as containing sensitive material using the optinal sensitive argument:
 
+Setting an output value in the root module as sensitive prevents Terraform from showing its value in the list of outputs at the end of terraform apply
 
+Sensitive output values are still recorded in the state, and so will be visible to anyone who is able to access the state data. 
+
+## Module Versions
+It's recommanded to explicitly constraint the acceptable version numbers for each external module to avoid unexpected or unwanted changes.
+
+Version constraints are supported only for modules installed from a module registry, such as the Terraform Registry or Terraform Cloud private module registry
+
+## Terraform Registry
+The Terraform Registry is integrated directly into Terraform. 
+
+The syntax for refereing a registry module is 
+<NAMESPACE>/<NAME>/<PROVIDER>
+  
+For example: hashicorp/consul/aws.
+
+```sh
+module "consul" {
+  source = "hashicorp/consul/aws"
+  version = "0.1.0"
+}  
+```
+## Private Registry for Module Sources
+You can also use modules from a private registry, like the one provided by Terraform Cloud.
+
+Private registry modules have source strings of the following form:
+<HOSTNAME>/<NAMESPACE>/<NAME_PROVIDER>
+
+This the same format as the public registry, but with an added hostname prefix.
+  
+While fetching a module, having a version is required.
+
+```sh
+module "vpc" {
+  source = "app.terraform.io/example_corp/vpc/aws"
+  version = "0.9.3"
+}  
+```
+  
