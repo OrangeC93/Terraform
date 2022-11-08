@@ -61,4 +61,37 @@ resource "aws_instance" "web" {
   instance_type="t2.micro"
 }
 ```
+## Sentinel
+Sentinel is an embedded policy-as-code framework integrated with the HashiCorp Enterpreise products.
 
+Can be used for various use-cases like:
+- Verify if EC2 instance has tages
+- Verify if the S3 bucket has encryption enabled
+
+## Sensitive Data in State File
+If you manage any sensitive data with Terraform (like database passwords, user passwords, or private keys), treat the state itself as sensitive data. 
+
+Approches in such a scenario:
+
+Terraform Cloud alwasy encrypts the state at rest and protects it with TLS in transit. Terraform Cloud also knows the identity of the user requesting state and maintains a history of stae changes.
+
+The S3 backend supports encryption at rest when the encrypt option is enabled.
+
+## Dealing with Credentials in Config
+Hard-coding credential into any Terraform configuration are not recommended, and risks the secret leakage should this file ever be commited to a public version control system.
+
+You can store the credentials outside of terraform configuration.
+
+Storing credentials as part of environment variable is also a much better approach than hard cording it in the system. 
+
+## Remote Backends
+The remote backend stores Terraform state and may be used to run operations in Terraform Cloud.
+
+When using full remote operations, operations like terraform apply can be executed in Terraform Cloud's run environment, with log output streaming to the local terminal. 
+
+## Miscellaneous Pointers
+Terraform does not require go as a prerequisite.
+
+It works well in Windows, Linux, Mac.
+
+Windows Server is not mandatory.
