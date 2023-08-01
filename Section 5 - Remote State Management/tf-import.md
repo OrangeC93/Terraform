@@ -1,3 +1,6 @@
+## Terraform Import
+Allows you take resource you have created by some other means and bring it under Terraform management.
+manually created -> terraform import -> terraform .tfstate <- s3.tf and ec2.tf
 ### Documentation Referred:
 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance

@@ -1,3 +1,9 @@
+## Terraform and .gitignore
+Depending on the env, it's recommended to avoid commiting certain files to GIT
+- .terraform: this file will be recreated when terraform init is run
+- terraform.tfvars: likely to contain sernsitive data like username/passwords and secrets
+- terraform.tfstate: should be stored in the remote side
+- crash.log: if terraform crashed, the logs are stored to a file named crash.log
 ### Documents Referred:
 
 GitHub gitignore repository:

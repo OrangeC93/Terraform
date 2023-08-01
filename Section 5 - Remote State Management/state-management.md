@@ -1,3 +1,34 @@
+## Overview of State Modification
+As your Terrafom usage becomes more advanced, there're some cases where you may need to modify the Terraform state. It is important to never modify the state file directly. Instead, make use of terraform state command. 
+
+## List
+```sh
+terraform state list
+aws_iam_user.lb
+aws_instance.webapp
+```
+
+## Move
+The terraform state mv command is used to move items in a Terraform state.
+This command is used in many cases in which you want to rename an existing resource without destroying and recreating it. Due tot the destructive nature of this command, this command will output a backup copy of the state prior to saving any changes.
+```sh
+terraform state mv[options] SOURCE DESTINATION
+```
+
+## Pull
+The terraform state pull command is used to manually download and output the state from remote state. This is useful for reading values out of state (potentially pairing this command with something lik jq)
+
+## Push
+The terraform state push command is used to manually upload a locak state file to remote state. This command should rarely be used. 
+
+## Remove
+The terraform state rm command is used to remove items from the Terraform state. Items removed from the Terraform state are not physically destroyed. Item removed from the Terraform state are only no longer managed by Terraform. For example, if you remove an AWS instance from the state, the AWS instance will continue running but terraform plan no longer see that instance. 
+
+## Show
+Show the attribute of a single resourdce in the Terraform state
+
+## Example
+
 ```sh
 provider "aws" {
   region     = "us-west-2"

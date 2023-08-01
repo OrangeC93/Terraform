@@ -30,3 +30,6 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDh]: <./state-management.md>
    [PlDi]: <./remote-states>
    [PlDj]: <./tf-import.md>
+
+# Resource
+https://docs.google.com/document/d/1QH8gMz5Rp_J4e7dODQqmFSM5XabGZiGWKOoOFkJtls4/edit?usp=sharing
