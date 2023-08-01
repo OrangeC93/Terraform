@@ -1,3 +1,22 @@
+## Overview of Terraform Functions
+The Terraform language includes a nmber of built-in functions that you can use to transform and combine values. The general syntax for function call is a function name followed by comma-separated arguments in parentheses: function(argument1, argument2)
+
+```sh 
+max(5, 12, 9)
+```
+
+## List of Available Functions
+The Terraform language does not support user-defined functions, and so only the functions built in to the language are available for use
+- Numeric
+- String
+- Collection
+- Encoding
+- Filesystem
+- Date and Time
+- Hash and Crypto
+- IP Network
+- Type Conversion
+
 ## This snippet is from the Terraform Function video.
 
 ### functions.tf

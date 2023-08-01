@@ -20,3 +20,6 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDc]: <./sensitive.tf>
    [PlDd]: <./tfstate-git.md>
    [PlDe]: <./vault.tf>
+
+# Resources
+https://docs.google.com/document/d/1fNKP1b6Uv1hav03idiaTgbuxHgJ9ujzOh2ALoMBVovE/edit?usp=sharing

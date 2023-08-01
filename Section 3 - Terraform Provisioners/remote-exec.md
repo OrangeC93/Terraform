@@ -1,3 +1,24 @@
+## Provisioners
+Provisions are used to execute scripts on a local or remote machine as part of resource creataion or desctruction. For example: on creation of Web-Server, execute a script which installs Nginx web-server
+
+## Main Two Types
+- local exec: invoke local executable after resource is created
+```sh
+resource "aws_instance" "web" {
+  provisioner "local-exec" {
+    command = "echo ${aws_instance.web.private_ip} >> private_ips.txt"
+  }
+}
+```
+- remote exec: invoke scripts directly on the remote server
+```sh
+resource "aws_instance" "web" {
+  provisioner "remote-exec" {
+
+  }
+}
+```
+
 ### Documentation Referenced:
 
 https://www.terraform.io/language/resources/provisioners/remote-exec

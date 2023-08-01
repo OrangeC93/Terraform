@@ -1,3 +1,6 @@
+## Understanding Semantics
+Terraform generally loads all the configuration files within the directory specified in alphabetical order. The files loaded must end in either .tf or .tf.json to specify the format that is in use.
+- terraform-kplabs: web.tf, app.tf, sg.tf, providers.tf
 
 ### ec2.tf
 
@@ -32,6 +35,14 @@ provider "aws" {
 }
 ```
 
+### variables.tf
+
+```sh
+variable "iam_user" {
+  default = "demouser"
+}
+```
+
 ### semantics.tf
 
 ```sh
@@ -53,13 +64,5 @@ resource "aws_instance" "myec2" {
 resource "aws_iam_user" "lb" {
   name = var.iam_user
   path = "/system/"
-}
-```
-
-### variables.tf
-
-```sh
-variable "iam_user" {
-  default = "demouser"
 }
 ```

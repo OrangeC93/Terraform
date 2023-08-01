@@ -20,3 +20,6 @@ The code mentioned in this document are used in the HashiCorp Certified Terrafor
    [PlDc]: <./kplabs-workspace.md>
    [PlDd]: <./module-locals>
    [PlDe]: <./module-outputs>
+
+# Resources 
+https://docs.google.com/document/d/1t8kNEBG1xwob-OabZfF3Ynyw90A7spOWdWD7fTHdj7M/edit?usp=sharing

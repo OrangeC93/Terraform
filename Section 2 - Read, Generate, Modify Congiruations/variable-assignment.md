@@ -1,3 +1,15 @@
+### Multiple Approaches to Variable Assignment
+
+Variables in Terraform can be assigned values in multiple ways
+- Environment variables
+- Command Line Flag
+- From a File
+- Variable Defaults
+
+Declaration vs Assignment
+- A variables.tf file is used to define the variables type and optionally set a default value.
+- A terraform.tfvars file is used to set the actual values of the variables.
+- You could set default values for all your variables and not use tfvars files at all.
 
 ### Default File used in Demo
 
@@ -10,7 +22,7 @@ provider "aws" {
 
 resource "aws_instance" "myec2" {
    ami = "ami-082b5a644766e0e6f"
-   instance_type = "t2.micro
+   instance_type = var.instancetype
 }
 ```
 ### variables.tf
